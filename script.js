@@ -70,8 +70,9 @@ gsap.from('.sec__arch h4',{
         trigger:'.sec__arch h4',
         scroller:'body',
         start:'top 55%',
+        end:'top 25%',
         scrub:true,
-        markers:true
+        //markers:true
 
     }
 })
@@ -81,3 +82,19 @@ gsap.from('.sec__arch h4',{
 //     sec__archPointer.style.height="100px";
 //     sec__archPointer.style.backgroundColor="red";
 // })
+
+gsap.from('.seven',{
+    rotateY:'-180deg',
+    // duration:0.6,
+    duration:5,
+    ease: "power4.out",
+    scrollTrigger:{
+        trigger:'.seven',
+        scroller:'body',
+        markers:true,
+        start:'top 50%',
+        end:'top 20%',
+        scrub:true
+        
+    }
+})
