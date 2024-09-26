@@ -117,16 +117,33 @@ gsap.from('.sec__bg--patch',{
 })
 
 
-gsap.to('.sec__zoom',{
-    clipPath: 'circle(calc(60%) at 67% 41%)',
+let t2=gsap.timeline();
+
+t2.to('.sec__zoom',{
+    clipPath: 'circle(calc(100%) at 67% 41%)',
     duration:2.5,
     ease: "power4.out",
     scrollTrigger:{
         trigger:'.sec__zoom',
         scroller:'body',
-        markers:true,
+        // markers:true,
         start:'top 30%',
-        end:'top -30%',
+        end:'top -50%',
+        scrub:true
+        
+        
+    }
+})
+t2.from('.sec__zoom p',{
+    opacity:0,
+    
+    delay:1.2,
+    scrollTrigger:{
+        trigger:'.sec__zoom',
+        scroller:'body',
+        // markers:true,
+        start:'top 30%',
+        end:'top -50%',
         scrub:true
         
         

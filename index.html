@@ -5,13 +5,16 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section>
+        <section id="home">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Motion</a></li>
-                    <li><a href="#">Still</a></li>
-                    <li><a href="#">Video</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portrait">Portrait </a></li>
+                    <li><a href="#architectural">
+                        Architectural</a></li>
+                    <li><a href="#aerial">Aerial </a></li>
+                    <li><a href="#sports">Sports </a></li>
+                    <li><a href="#micro">Micro </a></li>
                 </ul>
             </nav>
             <div class="sec-1">
@@ -22,7 +25,7 @@
                 <h1>A Photograph Is <br>The Pause Button On Life</h1>
             </div>
         </section>
-        <section class="sec__imgsplit">
+        <section id="portrait" class="sec__imgsplit">
             <div class="left">
                 <img class="img-responsive" src="https://img.freepik.com/free-photo/juneteenth-celebration-with-symbolic-representation-end-slavery-united-states_23-2151420765.jpg?t=st=1727105929~exp=1727109529~hmac=6cc9f39fb49b9cf08a5c340030e7bbffc00a0bd9b101f7e17a071b025a12f24b&w=360">
             </div>
@@ -34,25 +37,12 @@
                 <img class="img-responsive" src="https://img.freepik.com/free-photo/ai-generated-cute-girl-pic_23-2150649980.jpg?t=st=1727105507~exp=1727109107~hmac=04ae041ef9366513a4969ca16770e98dbc71bf542bc2a6f937ac12b314111a27&w=360">
             </div>
         </section>
-        <section class="sec__arch">
-            <div class="sec__arch--pointer">
-
-            </div>
-            <h4 class="title pt-60">Architectural Photography</h4>
-            <p class="data">Specializes in photographing buildings and other man-made structures.
-                 It focuses on both the aesthetic and functional aspects of design.</p>
-            <center><img src="https://img.freepik.com/premium-photo/palace-architecture-building-corridor_53876-238344.jpg?w=740" class="sec__arch--center pt-20"></center>
+       
+        <section class="sec__zoom" id="micro">
+            <p>Micro Photography</p>
+    </section>
         
-        </section>
-        <section class="sec__bg">
-            <div class="sec__bg--patch">
-                
-                <p>
-                    Aerial photography involves capturing images of the Earth from an elevated position, usually from aircraft, drones, satellites, or balloons. It provides a bird's-eye view of landscapes, cities, and various terrains, allowing for a unique perspective that is impossible to achieve from the ground.
-                </p>
-            </div>
-        </section>
-        <section>
+        <section id="sports">
             <div class="layout__masonry mt-120">
                 <div>
                     <img src="https://img.freepik.com/free-photo/portrait-person-practicing-sport_23-2151059725.jpg?t=st=1727192748~exp=1727196348~hmac=ba98af61a5a8bebc0c61dde40320c39131eb685cf05bea0930c3ac6c077f4d59&w=900">
@@ -110,10 +100,24 @@
                 
             </div>
         </section>
-        <section class="sec__zoom">
-
+        <section id="aerial" class="sec__bg">
+            <div class="sec__bg--patch">
+                
+                <p>
+                    Aerial photography involves capturing images of the Earth from an elevated position, usually from aircraft, drones, satellites, or balloons. It provides a bird's-eye view of landscapes, cities, and various terrains, allowing for a unique perspective that is impossible to achieve from the ground.
+                </p>
+            </div>
         </section>
-        <section></section>
+        <section id="architectural" class="sec__arch">
+            <div class="sec__arch--pointer">
+
+            </div>
+            <h4 class="title pt-60">Architectural Photography</h4>
+            <p class="data">Specializes in photographing buildings and other man-made structures.
+                 It focuses on both the aesthetic and functional aspects of design.</p>
+            <center><img src="https://img.freepik.com/premium-photo/palace-architecture-building-corridor_53876-238344.jpg?w=740" class="sec__arch--center pt-20"></center>
+        
+        </section>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

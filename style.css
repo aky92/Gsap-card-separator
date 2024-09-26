@@ -187,7 +187,7 @@ left:8%;
             padding:10px;
         }
         .sec__bg{
-            background-image: url('https://img.freepik.com/premium-photo/aerial-wonders-immersive-nature-scenery_926058-4229.jpg?w=900');
+            background-image: url('https://img.freepik.com/premium-photo/amazing-arial-view-vibrant-color-landscape_176697-10262.jpg?w=900');
             height: 100%;
             background-size: cover;
             background-attachment: fixed;
@@ -219,4 +219,12 @@ left:8%;
             position:relative;
             clip-path: circle(calc(9%) at 67% 41%)
 
+        }
+
+        .sec__zoom p{
+            position: absolute;
+    top: 50%;
+    left: 5%;
+    color: #efefef;
+    font-size: 46px;
         }
