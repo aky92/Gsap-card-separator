@@ -186,3 +186,37 @@ left:8%;
             text-align:center;
             padding:10px;
         }
+        .sec__bg{
+            background-image: url('https://img.freepik.com/premium-photo/aerial-wonders-immersive-nature-scenery_926058-4229.jpg?w=900');
+            height: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            position:relative;
+        }
+        .sec__bg--patch{
+            background-color: #d47600;
+            height:100%;
+            width:350px;
+            position:absolute;
+            left:0%;
+            top:0;
+            background-color: #084500a8;
+            display: flex;
+            align-items: center;
+        }
+        .sec__bg--patch p{
+            color:#efefef;
+            font-size: 21px;
+            padding:12px;
+            line-height: 1.4;
+        }
+
+        .sec__zoom{
+            background-image: url('https://img.freepik.com/free-photo/vividly-colored-hummingbird-nature_23-2151495296.jpg?t=st=1727364926~exp=1727368526~hmac=4c7bec0c6400c47565c04a7adfa9fb52038b51e4840524bf72ba9cf29424fbd5&w=900');
+            height: 100%;
+            background-size: cover;
+            background-attachment: scroll;
+            position:relative;
+            clip-path: circle(calc(9%) at 67% 41%)
+
+        }

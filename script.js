@@ -85,16 +85,50 @@ gsap.from('.sec__arch h4',{
 
 gsap.from('.seven',{
     rotateY:'-180deg',
-    // duration:0.6,
+    // duration:2.6,
     duration:5,
-    ease: "power4.out",
+    ease: "sine.out",
     scrollTrigger:{
         trigger:'.seven',
         scroller:'body',
-        markers:true,
-        start:'top 50%',
-        end:'top 20%',
+        // markers:true,
+        start:'top 60%',
+        end:'top 10%',
         scrub:true
+        
+    }
+})
+
+
+gsap.from('.sec__bg--patch',{
+    opacity:0,
+    left:-35,
+    duration:0.5,
+    scrollTrigger:{
+        trigger:'.sec__bg--patch',
+        scroller:'body',
+        //markers:true,
+        start:'top 60%',
+        end:'top 10%',
+        scrub:true
+        
+        
+    }
+})
+
+
+gsap.to('.sec__zoom',{
+    clipPath: 'circle(calc(60%) at 67% 41%)',
+    duration:2.5,
+    ease: "power4.out",
+    scrollTrigger:{
+        trigger:'.sec__zoom',
+        scroller:'body',
+        markers:true,
+        start:'top 30%',
+        end:'top -30%',
+        scrub:true
+        
         
     }
 })
